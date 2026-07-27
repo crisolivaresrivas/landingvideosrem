@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Presupuestos de obra</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #0a1128;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #e8ecf7;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .header .eyebrow {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #8ea3d6;
+    text-transform: uppercase;
+  }
+  .header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 8px 0 0;
+    color: #ffffff;
+  }
+  .grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #131c3d;
+    border: 1px solid #2a3a6b;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  .card.expensive {
+    border: 2px solid #c40000;
+  }
+  .badge {
+    display: inline-block;
+    background: #fdeaea;
+    color: #a30000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  .tag {
+    font-size: 12px;
+    color: #8ea3d6;
+    margin-bottom: 2px;
+  }
+  .company {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .items {
+    font-size: 12.5px;
+    color: #b8c2e0;
+    line-height: 2;
+    border-bottom: 1px solid #2a3a6b;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    white-space: pre-line;
+  }
+  .total-label {
+    font-size: 11px;
+    color: #8ea3d6;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .total {
+    font-size: 38px;
+    font-weight: 900;
+    color: #ff1a1a;
+    text-align: center;
+    line-height: 1.1;
+    text-shadow: 0 0 14px rgba(255,0,0,0.6);
+  }
+  .total.huge {
+    font-size: 46px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #8ea3d6;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="eyebrow">Cotización de obra — Confidencial</div>
+  <h1>¿Cuál presupuesto elijo?? 😩</h1>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="tag">Presupuesto 1 — "El de confianza"</div>
+    <div class="company">Reformas Del Sur S.L.</div>
+    <div class="items">Demolición ............ 4.850 €
+Mano de obra .......... 18.200 €
+Materiales ............. 16.900 €
+Fontanería ............. 5.400 €
+Electricidad ........... 4.750 €
+Imprevistos (30%) ..... 8.870 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">48.970 €</div>
+  </div>
+
+  <div class="card expensive">
+    <div class="badge">El más caro 🚨</div>
+    <div class="tag">Presupuesto 2 — "El premium"</div>
+    <div class="company">Estudio Arq. Ibarlucea</div>
+    <div class="items">Honorarios de dirección . 24.000 €
+Materiales importados ... 38.500 €
+Mano de obra especial ... 22.300 €
+Carpintería a medida ..... 12.900 €
+Iluminación de diseño .... 7.600 €
+"Ajuste por inflación" .... 12.000 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total huge">117.300 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 3 — "Sospechosamente barato"</div>
+    <div class="company">Manolo (primo de un amigo)</div>
+    <div class="items">Materiales "que consigo" . 5.600 €
+Mano de obra (en negro) .. 6.900 €
+Herramientas .............. 900 €
+Transporte ................. 450 €
+Garantía .................... 0 €
+Seguro ...................... 0 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">13.850 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 4 — "El de la franquicia"</div>
+    <div class="company">ObraExpress Iberia</div>
+    <div class="items">Gestión de proyecto ...... 9.200 €
+Materiales estándar ....... 21.400 €
+Mano de obra .............. 17.600 €
+Limpieza final ............. 1.100 €
+Permisos y tasas .......... 2.300 €
+IVA (21%) .................. 10.877 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">62.477 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 5 — "El que no responde el WhatsApp"</div>
+    <div class="company">Construcciones Vidal e Hijos</div>
+    <div class="items">Estudio previo ............ 3.100 €
+Materiales ................. 19.800 €
+Mano de obra .............. 15.200 €
+Andamios y logística ...... 4.600 €
+Pintura y acabados ........ 6.400 €
+Margen del contratista .... 9.900 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">59.000 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 6 — "El de última hora"</div>
+    <div class="company">Urgencias Obra 24h</div>
+    <div class="items">Recargo por urgencia ...... 8.500 €
+Materiales exprés .......... 24.900 €
+Mano de obra fin de semana 19.700 €
+Alquiler de maquinaria ..... 6.100 €
+Gestión de residuos ........ 1.800 €
+"Por las molestias" ........ 3.000 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">64.000 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 7 — "El del catálogo bonito"</div>
+    <div class="company">Interiores & Diseño Roca</div>
+    <div class="items">Proyecto de interiorismo .. 6.800 €
+Materiales de autor ........ 29.500 €
+Mano de obra .............. 16.400 €
+Mobiliario a medida ........ 14.200 €
+Fotografía final ............ 900 €
+Gestión de compras ........ 4.100 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">71.900 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 8 — "El low cost que después no es tan low cost"</div>
+    <div class="company">ObraFácil Reformas</div>
+    <div class="items">Presupuesto base .......... 9.900 €
+Materiales "básicos" ....... 12.300 €
+Mano de obra .............. 11.700 €
+"Extras no previstos" ...... 8.400 €
+Cambio de plazo (penalidad) 3.200 €
+Segunda visita técnica ..... 600 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">46.100 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 9 — "El de la cooperativa de barrio"</div>
+    <div class="company">Cooperativa Constructora Norte</div>
+    <div class="items">Materiales ................. 15.600 €
+Mano de obra colectiva .... 13.900 €
+Coordinación de obra ....... 2.400 €
+Herramientas compartidas .. 700 €
+Seguro colectivo ........... 1.100 €
+Fondo de imprevistos ....... 4.200 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">37.900 €</div>
+  </div>
+
+  <div class="card">
+    <div class="tag">Presupuesto 10 — "El que llegó con PowerPoint"</div>
+    <div class="company">GrupoConstruye Consulting</div>
+    <div class="items">Consultoría inicial ........ 5.500 €
+Estudio de viabilidad ...... 4.900 €
+Materiales ................. 22.000 €
+Mano de obra subcontratada 18.600 €
+Informe de seguimiento ..... 2.700 €
+Honorarios de gestión ...... 7.800 €</div>
+    <div class="total-label">Total final</div>
+    <div class="total">61.500 €</div>
+  </div>
+
+</div>
+
+<div class="footer">diez presupuestos, diez realidades, un dolor de cabeza</div>
+
+</body>
+</html>
