@@ -99,6 +99,17 @@
     font-size: 13px;
     color: #8ea3d6;
   }
+
+  @media (max-width: 700px) {
+    body { padding: 24px 16px; }
+    .grid { grid-template-columns: 1fr; gap: 24px; }
+    .card { padding: 24px 22px; min-height: 70vh; display: flex; flex-direction: column; justify-content: center; }
+    .header h1 { font-size: 24px; }
+    .company { font-size: 19px; }
+    .items { font-size: 14px; line-height: 2.2; }
+    .total { font-size: 44px; }
+    .total.huge { font-size: 52px; }
+  }
 </style>
 </head>
 <body>
